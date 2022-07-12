@@ -1,0 +1,84 @@
+// Place your key bindings in this file to override the defaults
+[
+    {
+        "key": "alt+f",
+        "command": "workbench.action.toggleFullScreen",
+        "when": "!isIOS"
+    },
+    {
+        "key": "f11",
+        "command": "-workbench.action.toggleFullScreen",
+        "when": "!isIOS"
+    },
+    {
+        "key": "alt+m",
+        "command": "explorer.newFolder"
+    },
+    {
+        "key": "alt+n",
+        "command": "explorer.newFile"
+    },
+    {
+        "key": "browserback",
+        "command": "workbench.action.closeEditorInAllGroups"
+    },
+    {
+        "key": "alt+q",
+        "command": "workbench.action.focusSideBar"
+    },
+    {
+        "key": "ctrl+0",
+        "command": "-workbench.action.focusSideBar"
+    },
+    {
+        "key": "alt+j",
+        "command": "terminal.focus"
+    },
+    {
+        "key": "ctrl+k",
+        "command": "workbench.action.focusActiveEditorGroup"
+    },
+    {
+        "key": "alt+h",
+        "command": "terminal.removeView"
+    },
+    {
+        "key": "alt+x",
+        "command": "workbench.action.closeAllEditors"
+    },
+    {
+        "key": "ctrl+k ctrl+w",
+        "command": "-workbench.action.closeAllEditors"
+    },
+    {
+        "key": "ctrl+oem_1",
+        "command": "editor.action.formatSelection",
+        "when": "editorHasDocumentSelectionFormattingProvider && editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "ctrl+k ctrl+f",
+        "command": "-editor.action.formatSelection",
+        "when": "editorHasDocumentSelectionFormattingProvider && editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "ctrl+s",
+        "command": "workbench.action.files.saveFiles"
+    },
+    {
+        "key": "ctrl+s",
+        "command": "-workbench.action.files.save"
+    },
+    {
+        "key": "ctrl+q",
+        "command": "-workbench.action.quit"
+    },
+    {
+        "key": "alt+q",
+        "command": "-extension.vim_winCtrlQ",
+        "when": "editorTextFocus && vim.active && vim.use<C-q> && !inDebugRepl"
+    },
+    {
+        "key": "alt+a",
+        "command": "workbench.action.toggleSidebarVisibility"
+    }
+]
