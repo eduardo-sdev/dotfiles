@@ -23,7 +23,7 @@ filetype plugin on
 filetype indent on
 retab!
 
-" hinde start line status
+" hide status line
 set noshowmode
 set noruler
 set laststatus=0
