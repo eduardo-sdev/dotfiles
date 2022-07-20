@@ -1,12 +1,17 @@
 nnoremap <SPACE> <Nop>
 let mapleader=" "
 
-nnoremap <a-e> :Ex<CR>
+nnoremap <C-w><C-e> :Ex<CR>
 nnoremap <A-[> :Prettier<CR>
 
 nnoremap <leader>w ciw
 nnoremap <leader>D dd
 nnoremap <leader>d diw
+
+map <C-q> :bnext<CR>
+map tr :bprevious<CR>
+map te :tabe %<CR>
+map <C-w><C-d> :bd<CR>
 
 nnoremap <leader>g :Codi<CR>
 

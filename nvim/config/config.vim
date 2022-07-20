@@ -25,8 +25,8 @@ retab!
 
 " hide status line
 set noshowmode
-set noruler
-set laststatus=0
-set noshowcmd
-set cmdheight=1
+" set noruler
+" set laststatus=0
+" set noshowcmd
+" set cmdheight=1
 

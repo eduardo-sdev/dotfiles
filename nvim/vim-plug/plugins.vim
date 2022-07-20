@@ -2,6 +2,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
 
     " ---------- Better Syntax Support ----------
     Plug 'sheerun/vim-polyglot'
+    let g:polyglot_is_disabled={}
 
     " ----------  Auto pairs for '(' '[' '{' ----------
     Plug 'jiangmiao/auto-pairs'
@@ -9,8 +10,6 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " ----------  theme ----------
     Plug 'https://github.com/rafi/awesome-vim-colorschemes'
     Plug 'https://github.com/kjssad/quantum.vim'
-    Plug 'https://github.com/morhetz/gruvbox'
-    Plug 'https://github.com/fcpg/vim-farout'
     Plug 'tomasr/molokai'
 
     " ----------  Auto close
@@ -20,7 +19,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'neoclide/coc.nvim', {'branch': 'release'}
     command! -nargs=0 Prettier :CocCommand prettier.formatFile
 
-    " ---------- Adding color with colorizer & rainbow
+    " ---------- Adding color with colorizer 
     Plug 'norcalli/nvim-colorizer.lua'
 
     " ---------- developer web suggest tag
@@ -80,15 +79,33 @@ call plug#begin('~/.config/nvim/autoload/plugged')
 
         Plug 'wakatime/vim-wakatime'
 
-        Plug 'https://github.com/ashisha/image.vim'
-
         Plug 'https://github.com/github/copilot.vim'
 
         "view code js
         Plug 'https://github.com/metakirby5/codi.vim'
 
         Plug 'godlygeek/tabular'
-        Plug 'preservim/vim-markdown'
+
+        " line status
+        Plug 'vim-airline/vim-airline'
+        Plug 'vim-airline/vim-airline-themes'
+        " enable tabline
+        let g:airline#extensions#tabline#enabled = 1
+        let g:airline#extensions#tabline#left_sep = ''
+        let g:airline#extensions#tabline#left_alt_sep = ''
+        let g:airline#extensions#tabline#right_sep = ''
+        let g:airline#extensions#tabline#right_alt_sep = ''
+        " let g:airline#extensions#tabline#buffer_min_count = 2
+        " let g:airline#extensions#tabline#buffer_idx_mode = 1
+
+        " enable powerline fonts
+        let g:airline_powerline_fonts = 1
+        let g:airline_left_sep = ''
+        let g:airline_right_sep = ''
+        " Switch to your current theme
+        let g:airline_theme = 'molokai'
+        " Always show tabs
+        set showtabline=2
 
 call plug#end()
 
